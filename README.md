@@ -8,7 +8,7 @@
 
 `npmai` is a lightweight Python package designed to bridge the gap between users and open-source LLMs. 
 
-Connect with **Ollama** and 12+ other powerful models instantly—**no installation, no login, and no API keys required, and help in development of RAG Agents without installing anything locally or on cloud and it is free without sigin or signup or any type of limit.**
+Connect with **Ollama** and 45+ other powerful models instantly—**no installation, no login, and no API keys required, and help in development of RAG Agents without installing anything locally or on cloud and it is free without sigin or signup or any type of limit.**
 
 ---
 
@@ -23,12 +23,13 @@ Connect with **Ollama** and 12+ other powerful models instantly—**no installat
 - 🛠️ **Universal API:** Access via Python, JavaScript, C++, Java, or C.
 - 🔍 **Tavily:** Tavily integrated and also integrating MCP Servers and advance tools to make LLM more powerfull
 - 📑 **LARA**:LARA we developed reaserch paper which addresses major problems of RAG industry.
-- 🤖**Future Features:** In v0.1.9 we are going to integrate ***LARA*** and ***Offline Ollama*** also but with integration of pool of MCP Servers and Tools that will advance a 1b Param Model and model will respond in a way you cannot imagine so keep patience we are working on it and soon we will launch it.
+- 🤖 **Scalability**:80640 requests per 24 hour we can easily handle on free computes neither we are paying anyone nor users or developers will pay anything to npmai.
+- 🛠️**Future Features:** In v0.2.0 we are going to integrate ***LARA*** and ***Offline Ollama*** also but with integration of pool of MCP Servers and Tools that will advance a 1b Param Model and model will respond in a way you cannot imagine so keep patience we are working on it and soon we will launch it.
 
 ---
 
 ## Achievment for npmai:-
-**We Achieved 627k+ installations this shows reliabity and trust on npmai**
+**We Achieved 1.2 Million+ installations this shows reliabity and trust on npmai**
 
 ---
 
@@ -54,7 +55,7 @@ Connect with **Ollama** and 12+ other powerful models instantly—**no installat
 ## Workflow:-
 
 ### npmai
-<img src="https://i.ibb.co/NgChKgHP/npmai.png" alt="Example Screenshot" width="700" style="display: block; margin: 0 auto; margin-left:20px">
+<img src="https://i.ibb.co/pjhFhbpM/npmainew.png" alt="Example Screenshot" width="800" style="display: block; margin: 0 auto; margin-left:20px">
 
 ### Rag
 <img src="https://i.ibb.co/W43CqndR/NPMAI-RAG-API-Pipleline.png" alt="Example Screenshot" width="1100" style="display: block; margin: 0 auto; margin-left:20px">
@@ -144,13 +145,18 @@ nlohmann::json payload = {
 };
 auto res = cli.Post("/llm", payload.dump(), "application/json");
 ```
-🆕 Latest Update: Version 0.1.8
+🆕 Latest Update: Version 0.1.9
 
-In this update :-
-1. Integrated Supabase for long term storage of vecorised Documents, this integration is done in Huggingface Server where npmai send request for Rag processes.
-2. Added a method in Rag class of npmai sdk named "vector_db_use".
-3. Updated parameters of Rag class to make compatible with supabase integration on Huggingface Server.
-4. Updated Docstrings for Rag class.
+In this update:-
+
+1. npmai introduced a new distributed architechure that can handle 80K+ requests in 24 hour for free neither npmai will pay anything to anyone nor users or devs will pay anything to npmai.
+2. npmai added change,Models,fallback_api paramters in Ollama class.
+3. npmai removed the inheritence of LLM class from langchain.
+4. npmai changed api parameter link in Ollama class.
+5. npmai collabrated with developers who wanted to support us and we together launched 56 spaces which powers 80K+ requests in free of cost for 24hr daily.
+ 
+version 0.1.8 --->> Integrated Supabase for long term storage of vectorised Documents,Added a method in Rag class of npmai sdk "vector_db_use", Updated parameters of Rag class to make compatible with new supabase integrations, Updated Docstrings for Rag class.
+
 
 version 0.1.7 --->> Updated parameters of Rag class for sending multiple files of all type at once and also added a clear_memory method in Memory class to remove memory files and added docstrings description in every class Ollama,Memory,Rag.
 
@@ -223,7 +229,8 @@ Please star our project on Github please.
 Documentation: npmai.netlify.com
 
 
-API Endpoint: npmai-api.onrender.com/llm
+API Endpoint: https://npmaiecosystem-loadbalancer.hf.space/load_balancer
+Fallback API Endpoint: https://npmaiecosystem-loadbalancerfallback.hf.space/load_balancer
 
 Developed with ❤️ to make AI accessible to everyone.
 
@@ -231,4 +238,4 @@ Developer and Maintainer:- Sonu Kumar
 
 # Thankyou Statement:-
 
-**So thankyou for Installations and Support of you people `npmai` PYPI Package achieved 340k+ Installations today and npmai is getting installed daily by 15k Installations.**
+**So thankyou for Installations and Support of you people `npmai` PYPI Package achieved 1.2 Million+ Installations today and npmai is getting installed daily by 15k Installations.**
