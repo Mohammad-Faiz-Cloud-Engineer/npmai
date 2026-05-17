@@ -220,6 +220,15 @@
       ]
     },
     {
+      "title":"Releases on Github",
+      "purpose":"About .tar, .whl files to directly use npmai without pypi also",
+      "page_notes": [
+        {
+          "content":"this is the link visit here if you can https://github.com/sonuramashishnpm/npmai/releases/tag/v0.1.9"
+        }
+      ]
+    },
+    {
       "title": "Models Service",
       "purpose": "Document the Ollama-based LLM serving service: architecture, model loading, FastAPI endpoints, and deployment",
       "parent": "Backend Services",
