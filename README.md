@@ -35,6 +35,7 @@ Connect with **Ollama** and 45+ other powerful models instantly—**no installat
 
 ## 🖥️ Supported Models
 
+
 | Model Name | Description |
 | :--- | :--- |
 | `llama3.2` | Meta's latest powerful small model |
@@ -47,10 +48,45 @@ Connect with **Ollama** and 45+ other powerful models instantly—**no installat
 | `InternLM` | From Sanghai AI Laboratory |
 | `Vicuna` | From LMSYS Org |
 | `gemma3:12b` | A latest AI Model by Google which has knowledge cutoff of 2026 also **Latest AI Model in NPMAI ECOSYSTEM**|
-|`gemma2:9b` | Model by Google Deepmind also in *NPMAI ECOSYSTEM* |
-|`qwen3.5:9b` | One of the latest and powerfull model with latest knowledge cutoff year 2026 now in *NPMAI ECOSYSTEM* |
+| `gemma2:9b` | Model by Google Deepmind also in *NPMAI ECOSYSTEM* |
+| `qwen3.5:9b` | One of the latest and powerfull model with latest knowledge cutoff year 2026 now in *NPMAI ECOSYSTEM* |
+| `llama-3.1-8b-instruct` | Advanced multi-lingual logic and reasoning model by Meta |
+| `llama-3.2-3b-instruct` | Ultra-efficient edge model optimized for mobile and desktop hardware |
+| `llama-3.2-1b-instruct` | Lightweight automation and low-latency task runner by Meta |
+| `qwen-2.5-7b-instruct` | Alibaba's top-tier foundational text generation and editing model |
+| `qwen-2.5-math-7b` | State-of-the-art algebraic and step-by-step math solver by Alibaba |
+| `qwen-2-vl-7b-instruct` | Advanced vision model for document parsing, charts, and video analysis |
+| `phi-3-mini-4k` | Microsoft's compact powerhouse built for strong logical tasks |
+| `phi-3-vision-4.2b` | Microsoft's lightweight multimodal model for image and text reasoning |
+| `gemma-2-2b-instruct` | Google's sub-3B model delivering high-quality conversational depth |
+| `openhermes-2.5-mistral-7b` | Highly regarded, community-tuned model for diverse utility tasks |
+| `yi-1.5-6b-chat` | Premium bilingual English/Chinese model by 01.AI |
+| `deepseek-coder-6.7b` | Specialized deep-learning developer companion for precise code completion |
+| `codellama-7b-instruct` | Meta's dedicated framework for writing, debugging, and explaining code |
+| `stable-code-3b` | High-speed code generation tool optimized for edge deployment |
+| `granite-3.0-2b-instruct` | IBM's enterprise-grade model tailored for clean business workflows |
+| `smollm2-1.3b-instruct` | Hugging Face's tiny, rapid agentic framework for micro-devices |
+| `stablelm-2-1.6b` | Fast classification and high-throughput embedding engine by Stability AI |
+| `biomistral-7b` | Specialized health-sector model tuned for biomedical knowledge answering |
+| `meditron-7b` | Clinical-grade open-source LLM engineered for medical guidance retrieval |
+| `clinical-phi-3-3.8b` | Compact clinical assistant optimized for processing medical case notes |
+| `fingpt-forecaster-7b` | Financial market predictor tuned for sentiment and numeric data analysis |
+| `llama-3-fin-8b` | Quantitative finance asset built for reading complex corporate filings |
+| `legal-review-mistral-7b` | Regulatory compliance engine for reviewing contracts and legal syntax |
+| `deepseek-math-7b` | Elite open-source math reasoner solving complex algorithmic structures |
+| `wizardmath-7b-v1.1` | Logic-reinforced model tailored for advanced math equations |
+| `llava-v1.6-mistral-7b` | Multi-turn visual dialogue agent linking image context with text responses |
+| `moondream2-2b` | Ultra-small, fast vision framework built for localized image tagging |
+| `gorilla-openfunctions-v2` | Specialized tool-using model trained to output precise external API calls |
+| `hermes-2-pro-mistral-7b` | Function-calling expert built to generate structured JSON outputs natively |
+| `command-r-7b` | Cohere's efficient agentic framework for multi-step workflow automation |
+| `deepseek-r1-distill-qwen-7b` | Advanced reasoning model distilled for math, code, and logic tasks |
+| `minicpm-v-2.6-7b` | High-performance multimodal model for edge-based vision-language tasks |
+| `gemma-3-4b-instruct` | Google's highly efficient compact variant with a 2026 knowledge cutoff |
+| `qwen-2.5-coder-3b` | Alibaba's fast-response, low-footprint coding model for IDE integration |
 
 ---
+
 
 ## Workflow:-
 
