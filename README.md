@@ -36,6 +36,7 @@ Connect with **Ollama** and 45+ other powerful models instantly—**no installat
 ## 🖥️ Supported Models
 
 
+
 | Model Name | Description |
 | :--- | :--- |
 | `llama3.2` | Meta's latest powerful small model |
@@ -50,42 +51,43 @@ Connect with **Ollama** and 45+ other powerful models instantly—**no installat
 | `gemma3:12b` | A latest AI Model by Google which has knowledge cutoff of 2026 also **Latest AI Model in NPMAI ECOSYSTEM**|
 | `gemma2:9b` | Model by Google Deepmind also in *NPMAI ECOSYSTEM* |
 | `qwen3.5:9b` | One of the latest and powerfull model with latest knowledge cutoff year 2026 now in *NPMAI ECOSYSTEM* |
-| `llama-3.1:8b` | Advanced multi-lingual logic and reasoning model by Meta |
-| `llama-3.2:3b` | Ultra-efficient edge model optimized for mobile and desktop hardware |
-| `llama-3.2:1b` | Lightweight automation and low-latency task runner by Meta |
-| `qwen2.5:7b` | Alibaba's top-tier foundational text generation and editing model |
-| `qwen2.5-math:7b` | State-of-the-art algebraic and step-by-step math solver by Alibaba |
-| `qwen2-vl:7b` | Advanced vision model for document parsing, charts, and video analysis |
-| `phi3:mini` | Microsoft's compact powerhouse built for strong logical tasks |
-| `phi3:vision` | Microsoft's lightweight multimodal model for image and text reasoning |
-| `gemma2:2b` | Google's sub-3B model delivering high-quality conversational depth |
-| `openhermes:7b` | Highly regarded, community-tuned model for diverse utility tasks |
-| `yi:6b` | Premium bilingual English/Chinese model by 01.AI |
-| `deepseek-coder:6.7b` | Specialized deep-learning developer companion for precise code completion |
-| `codellama:7b` | Meta's dedicated framework for writing, debugging, and explaining code |
-| `stable-code:3b` | High-speed code generation tool optimized for edge deployment |
-| `granite3-instruct:2b` | IBM's enterprise-grade model tailored for clean business workflows |
-| `smollm2:1.3b` | Hugging Face's tiny, rapid agentic framework for micro-devices |
-| `stablelm2:1.6b` | Fast classification and high-throughput embedding engine by Stability AI |
-| `biomistral:7b` | Specialized health-sector model tuned for biomedical knowledge answering |
-| `meditron:7b` | Clinical-grade open-source LLM engineered for medical guidance retrieval |
-| `clinical-phi3:3.8b` | Compact clinical assistant optimized for processing medical case notes |
-| `fingpt:7b` | Financial market predictor tuned for sentiment and numeric data analysis |
-| `llama3-fin:8b` | Quantitative finance asset built for reading complex corporate filings |
-| `legal-review-mistral:7b` | Regulatory compliance engine for reviewing contracts and legal syntax |
-| `deepseek-math:7b` | Elite open-source math reasoner solving complex algorithmic structures |
-| `wizardmath:7b` | Logic-reinforced model tailored for advanced math equations |
-| `llava:7b` | Multi-turn visual dialogue agent linking image context with text responses |
-| `moondream:2b` | Ultra-small, fast vision framework built for localized image tagging |
-| `gorilla-openfunctions:7b` | Specialized tool-using model trained to output precise external API calls |
-| `hermes2-pro:7b` | Function-calling expert built to generate structured JSON outputs natively |
-| `command-r:7b` | Cohere's efficient agentic framework for multi-step workflow automation |
-| `deepseek-r1:7b` | Advanced reasoning model distilled for math, code, and logic tasks |
-| `minicpm-v:7b` | High-performance multimodal model for edge-based vision-language tasks |
+| `llama3.1:8b` | Meta's core 8B general purpose engine optimized for multilingual logic |
+| `llama3.2:3b` | Balanced high-performance edge text generation optimized for low RAM footprint |
+| `llama3.2:1b` | Ultra-lightweight utility model ideal for fast token classification and structure tasks |
+| `qwen2.5:7b` | Alibaba's foundational language asset with highly improved structured JSON adherence |
+| `qwen2-math:7b` | Alibaba's official verified math release for complex algebraic step-by-step logic |
+| `qwen2.5vl` | Official vision-language model trained for complex chart parsing and video analysis |
+| `phi3:3.8b` | Microsoft's lightweight reasoning powerhouse focusing on mathematical logic puzzles |
+| `phi3:vision-128k` | Compact multimodal variant built to extract structured tables out of visual layouts |
+| `gemma2:2b` | Google's sub-3B model offering dense conversational performance on consumer hardware |
+| `openhermes` | Time-tested community fine-tune excellent at general reasoning and chat instructions |
+| `yi` | Highly optimized bilingual English/Chinese core developed by 01.AI |
+| `deepseek-coder:6.7b` | DeepSeek's specialized coding layout optimized for code reasoning and repository scanning |
+| `codellama:7b` | Meta's foundational software development assistant built for raw code synthesis |
+| `stable-code` | Stability AI's low-latency developer companion built for fast auto-completions |
+| `granite3.1:2b` | IBM's enterprise-grade language asset geared for strict corporate business logic |
+| `smollm:1.7b` | Hugging Face's micro-agent tool fine-tuned for device-level orchestration layers |
+| `stablelm2` | High-velocity text embeddings and lightweight text categorization suite |
+| `cniongolo/biomistral` | Specialized variant constructed for medical terminology analysis and clinical extraction |
+| `meditron` | Medical-focused framework optimized for healthcare response synthesis and guidance |
+| `hf.co/gaianet/FinGPT-MT-Llama-3-8B-LoRA-GGUF` | Quantitative trading and market sentiment parser adapted for corporate earnings analysis |
+| `deepseek-math` | High-tier open-source logical engine excelling at algorithmic structure tasks |
+| `wizardmath` | Reinforcement-tuned model engineered for processing complex word-problem variables |
+| `llava` | Versatile multimodal network connecting deep image contexts to multi-turn dialogues |
+| `moondream` | Tiny, high-speed vision framework optimized for rapid edge visual classifications |
+| `adrienbrault/gorilla-openfunctions-v2` | Functional automation system trained strictly to output exact external API mappings |
+| `command-r` | Cohere's enterprise-grade framework designed natively for multi-step agent tool calling |
+| `deepseek-r1:7b` | Open-weights reasoning architecture distilled for intense code, logic, and deep thought tasks |
+| `openbmb/minicpm-v2.6` | Highly resilient multimodal setup built for localized smartphone and edge image parsing |
 | `gemma3:4b` | Google's highly efficient compact variant with a 2026 knowledge cutoff |
-| `qwen2.5-coder:3b` | Alibaba's fast-response, low-footprint coding model for IDE integration |
+| `qwen2.5-coder:3b` | Alibaba's light-footprint code generator engineered for inline IDE tool setups |
+| `olmo2` | Fully open foundational training architecture matching standard 7B industry benchmarks |
+| `nemotron-mini` | NVIDIA's highly responsive text model fine-tuned for rapid multi-turn chat applications |
+| `aya` | Cohere's dedicated multilingual engine focusing on accurate low-resource language processing |
+| `phi4` | High-tier mathematical and logical system optimized for complex contextual memory reasoning |
 
 ---
+
 
 
 
