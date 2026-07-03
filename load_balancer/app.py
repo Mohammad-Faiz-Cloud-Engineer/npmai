@@ -24,6 +24,8 @@ r = Redis(
 
 """ Endpoint stats:-
 1.Public endpoints:- 55 Endpoints are public,
+These endpoints (2,3,4) is handled by people who handle endpoints by themselves and load_balancer at Alibaba Cloud automatically
+handle these as PUBLIC CANNOT USE THESE (2,3,4) ENDPOINTS DIRECTLY.
 2.Private endpoints:- 47 Endpoints are those endpoints which is contributed by some teams or oganisation who do not want to 
 allow 
 the use of their compute to everyone they allow to some specific clients but maintained and powered by 
