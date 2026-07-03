@@ -38,6 +38,24 @@ all 55 Endpoints are busy in such condition we open 6 Endpoints which is higly c
 this is hosted by Vicent our npmai Backend Head who works in alibaba, he hosted these models on his Alibaba Cloud accounts these are
 for public but not public endpoints these are private by Vincent but whenever a emergency occurs we open these endpoints.
 """
+
+""" IF Anyone Wants to contribute their compute:-
+1.Please first contact us on sonuramashishnpm@gmail.com before raising any PR or Issue related to Compute Contribution.
+2.What to write in email :-
+  a) Write in which category you want to contribute Public,Private,Priority Emergency, Public Emergency (this is in same order as in Endpoint stats)
+  b) If you had developed your own code and hosted models as per your choice so send the code either by github or generally we prefer
+      Private Huggingface Accounts.
+  c) If you just want to contribute compute and want that we(NPMAI ECOSYSTEM should use as we want then just send you account data
+     like Usage, current_plan, current_status, and other things as per asked by our team after you drop your first mail, after we review
+     and understand and if we accept your contribution then give us a access token (if You are contributing Huggingface Accounts) otherwise
+     whatever platform compute you are offering send us the access key or token as per platform so that we can manage the compute.
+  d) Ensure you give us at least Hugginface Account links so that we can connect with you easily.
+  e) Ensure you do not publicly release any contribution update before we deploy and test the idea or product.
+3.Do not share account if you think you can cancel the link very quickly becuase every endpoint is important for us as we are handling
+  massive userbase.
+4.After having a deal if we deploy something you do not have to change without asking NPMAI ECOSYSTEM core team and remember do not
+  log anything in any way.
+"""
 Model_links = {
     "llama3.2": "https://galactromedaNPMAIECOSYSTEM-model23.hf.space/llama3.2", #https://sonuramashishnpm-npmai.hf.space/llama
     "qwen2.5-coder:7b":"https://galactromedaNPMAIECOSYSTEM-model24.hf.space/qwen2.5-coder:7b", #https://sonuramashishnpm-npmai.hf.space/qwen
