@@ -22,12 +22,26 @@ r = Redis(
 )
 
 
-
+""" Endpoint stats:-
+1.Public endpoints:- 55 Endpoints are public,
+2.Private endpoints:- 47 Endpoints are those endpoints which is contributed by some teams or oganisation who do not want to 
+allow 
+the use of their compute to everyone they allow to some specific clients but maintained and powered by 
+NPMAI ECOSYSTEM(NPMAI LLM)
+3.Emergency Priority Fallback endpoints:- 26 Endpoints fall in this category where if all 22 and 4th category endpoints are 
+busy then our
+load_balancer stop serving new users and start prioritizing those requests from organisations who had contributed in NPMAI ECOSYSTEM or helped
+NPMAI ECOSYSTEM.
+4.Emergency General Endpoints:- 6 Endpoints are those endpoints where main models like llama3.2,qwen2.5-coder:7b,vicuna:7b,
+for emergency we keep a loaded copy wheneever Public Endpoints fail by an error in server,code, or any other condition except
+all 55 Endpoints are busy in such condition we open 6 Endpoints which is higly capable to handle around 4000 requests per 60 Minute
+this is hosted by Vicent our npmai Backend Head who works in alibaba, he hosted these models on his Alibaba Cloud accounts these are
+for public but not public endpoints these are private by Vincent but whenever a emergency occurs we open these endpoints.
+"""
 Model_links = {
-    "llama3.2": "https://sonuramashishnpm-npmai.hf.space/llama",
-    "qwen2.5-coder:7b":"https://sonuramashishnpm-npmai.hf.space/qwen",
-    "vicuna:7b":"https://sonuramashish22028704-vicuna7b.hf.space/vicuna",
-    "gemma3:12b":"https://npmaiecosystem-gemma312b.hf.space/gemma312b",
+    "llama3.2": "https://galactromedaNPMAIECOSYSTEM-model23.hf.space/llama3.2", #https://sonuramashishnpm-npmai.hf.space/llama
+    "qwen2.5-coder:7b":"https://galactromedaNPMAIECOSYSTEM-model24.hf.space/qwen2.5-coder:7b", #https://sonuramashishnpm-npmai.hf.space/qwen
+    "vicuna:7b":"https://galactromedaNPMAIECOSYSTEM-model25.hf.space/vicuna:7b", #https://sonuramashish22028704-vicuna7b.hf.space/vicuna
     "internlm2:7b":"https://sonuramashish22028704-internlm27b.hf.space/internlm",
     "falcon:7b-instruct":"https://sonuramashish22028704-falcon7binstruct.hf.space/falcon",
     "codellama:7b-instruct":"https://sonuramashish22028704-falcon7binstruct.hf.space/codellama",
@@ -35,6 +49,40 @@ Model_links = {
     "phi3:medium":"https://sonuramashish22028704-phi3medium.hf.space/phi3medium",
     "qwen3.5:9b":"https://sonuramashish22028704-vicuna7b.hf.space/qwen359gb",
     "gemma2:9b":"https://sonuramashish22028704-internlm27b.hf.space/gemma29b",
+    "llama3.2:3b":"https://npmaiecosystem-model5.hf.space/llama3.2:3b",
+    "llama3.1:8b":"https://npmaiecosystem-model5.hf.space/llama3.1:8b",
+    "qwen2.5:7b":"https://npmaiecosystem-model6.hf.space/qwen2.5:7b",
+    "llama3.2:1b":"https://npmaiecosystem-model6.hf.space/llama3.2:1b",
+    "qwen2-math:7b":"https://npmaiecosystem-model7.hf.space/qwen2-math:7b",
+    "qwen2.5vl":"https://npmaiecosystem-model7.hf.space/qwen2.5vl",
+    "phi3:3.8b":"https://sonuramashishnpmai-model8.hf.space/phi3:3.8b",
+    "llava-phi3":"https://sonuramashishnpmai-model8.hf.space/llava-phi3",
+    "gemma2:2b":"https://sonuramashishnpmai-model9.hf.space/gemma2:2b",
+    "openhermes":"https://sonuramashishnpmai-model9.hf.space/openhermes",
+    "deepseek-coder:6.7b":"https://sonuramashishnpmai-model10.hf.space/deepseek-coder:6.7b",
+    "yi":"https://sonuramashishnpmai-model10.hf.space/yi",
+    "granite3.3:2b":"https://sonuramashishnpmai-model12.hf.space/granite3.3:2b",
+    "smollm:1.7b":"https://sonuramashishnpmai-model12.hf.space/smollm:1.7b",
+    "stablelm2":"https://sonuramashishnpmai-model13.hf.space/stablelm2",
+    "cniongolo_biomistral":"https://sonuramashishnpm-model13.hf.space/cniongolo_biomistral",
+    "meditron":"https://KarachiUniNPMAIECOSYSTEM-model14.hf.space/meditron",
+    "granite4.1:3b":"https://karachiuninpmaiecosystem-model14.hf.space/granite4.1:3b",
+    "wizard-math":"https://karachiuninpmaiecosystem-model15.hf.space/wizard-math",
+    "llava":"https://karachiuninpmaiecosystem-model15.hf.space/llava",
+    "moondream":"https://karachiuninpmaiecosystem-model16.hf.space/moondream",
+    "openchat":"https://karachiuninpmaiecosystem-model16.hf.space/openchat",
+    "deepseek-r1:7b":"https://karachiuninpmaiecosystem-model17.hf.space/deepseek-r1:7b",
+    "openbmb_minicpm-v2.6":"https://karachiuninpmaiecosystem-model17.hf.space/openbmb_minicpm-v2.6",
+    "llama3:8b":"https://karachiuninpmaiecosystem-model18.hf.space/llama3:8b",
+    "gemma3:4b":"https://karachiuninpmaiecosystem-model18.hf.space/gemma3:4b",
+    "olmo2":"https://karachiuninpmaiecosystem-model19.hf.space/olmo2",
+    "nemotron-mini":"https://karachiuninpmaiecosystem-model19.hf.space/nemotron-mini",
+    "stable-code":"https://galactromedanpmaiecosystem-model20.hf.space/stable-code",
+    "codellama:7b":"https://galactromedanpmaiecosystem-model20.hf.space/codellama:7b",
+    "aya:8b":"https://galactromedanpmaiecosystem-model21.hf.space/aya:8b",
+    "phi4:14b":"https://galactromedanpmaiecosystem-model20.hf.space/phi4:14b",
+    "gemma4:e2b":"https://galactromedanpmaiecosystem-model22.hf.space/gemma4:e2b",
+    "qwen3.5:2b":"https://galactromedanpmaiecosystem-model22.hf.space/qwen3.5:2b",
     "llama3.2_fall":"https://sonuramashishnpm-npm-journalist.hf.space/llm_fall_llama",
     "qwen2.5-coder:7b_fall":"https://sonuramashish22028704-mistral7b.hf.space/llm_fall_qwen2",
     "vicuna:7b_fall":"https://sonuramashishnpm-model4.hf.space/llm_fall_vicuna",
@@ -45,7 +93,8 @@ Model_links = {
     "mistral:7b_fall":"https://sonuramashishnpm-model2.hf.space/fall_llm_mistral",
     "phi3:medium_fall":"https://sonuramashishnpm-model1.hf.space/llama_fall_phi",
     "qwen3.5:9b_fall":"https://sonuramashishnpm-model4.hf.space/llm_fall_qwen359gb",
-    "gemma2:9b_fall":"https://sonuramashishnpm-model3.hf.space/llm_fall_gemma29b"
+    "gemma2:9b_fall":"https://sonuramashishnpm-model3.hf.space/llm_fall_gemma29b",
+    "gemma3:12b":"https://npmaiecosystem-gemma312b.hf.space/gemma312b"
 }
 
 # Updated Lua Script
