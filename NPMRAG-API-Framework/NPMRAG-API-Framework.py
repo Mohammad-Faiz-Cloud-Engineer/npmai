@@ -318,8 +318,8 @@ async def get_retrieval(
 
     try:
         safe_db = safe_db_path(DB_PATH)
-    except ValueError as e:
-        return JSONResponse({"response": str(e)})
+    except ValueError:
+        return JSONResponse({"response": "Invalid DB_PATH"})
         
     if os.path.exists(safe_db):
         normal_retriever= retrieval(temperature=0.5,model="llama3.2",DB_PATH=safe_db,query=query)
