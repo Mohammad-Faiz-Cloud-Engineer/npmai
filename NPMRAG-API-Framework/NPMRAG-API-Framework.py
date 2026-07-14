@@ -84,6 +84,15 @@ def safe_db_path(db_path: str) -> str:
         raise ValueError("DB_PATH escaped safe directory")
     return result
 
+def safe_resolve_path(user_path: str) -> str:
+    full = os.path.abspath(os.path.normpath(user_path))
+    if full.startswith(os.path.abspath(SAFE_BASE)):
+        return full
+    full = os.path.abspath(os.path.normpath(os.path.join(SAFE_BASE, user_path)))
+    if not full.startswith(os.path.abspath(SAFE_BASE)):
+        raise ValueError("path escapes safe directory")
+    return full
+
 app=FastAPI()
 
 
@@ -122,6 +131,7 @@ def pdf_has_text(path):
 
 @app.post("/pdfetext")
 def extractable_text(path):
+    path = safe_resolve_path(path)
     print("Extracting")
     doc=fitz.open(path)
     full=[]
@@ -142,6 +152,7 @@ def preprocess_for_ocr(path):
 
 @app.post("/pdfstext")
 def pdf_scanned_to_text(pdf_path,dpi=300, tesseract_lang='eng'):
+    pdf_path = safe_resolve_path(pdf_path)
     print("scanning")
     pages = convert_from_path(pdf_path, dpi=dpi)
     print("pages")
@@ -155,6 +166,7 @@ def pdf_scanned_to_text(pdf_path,dpi=300, tesseract_lang='eng'):
 
 @app.post("/ocr")
 def ocr(path,lang="eng"):
+    path = safe_resolve_path(path)
     proc = preprocess_for_ocr(path)
     pil = Image.fromarray(proc)
     full = pytesseract.image_to_string(pil, lang=lang, config='--psm 6')
@@ -193,6 +205,7 @@ def get_transcript(link,output_path):
 
 @app.post("/video")
 def local_video_processing(video_path):
+    video_path = safe_resolve_path(video_path)
     clip=VideoFileClip(video_path)
 
     audio=clip.audio
@@ -205,6 +218,7 @@ def local_video_processing(video_path):
 
 @app.post("/text")
 def text_processes(path):
+    path = safe_resolve_path(path)
     with open(path,"r") as f:
         text=f.read()
         return text
